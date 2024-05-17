@@ -5,7 +5,7 @@ const proxyIPs = ["129.146.46.164"];//['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6ga
   
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];  
   
-let sha224Password = 'db2744091e077186e618ee50410d80e5e2c66585274e519db4a03e56';  
+let sha224Password = '08ae8919c19d406e9774befd1faa681838dd5f8107a51e4707ffbf13';  
   
 const worker_default = {  
    /** xxxx
