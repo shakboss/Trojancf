@@ -1,13 +1,14 @@
 // src/worker.js  
 import { connect } from "cloudflare:sockets";  
-const proxyIPs = ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'workers.cloudflare.cyou'];  
+const proxyIPs = ["129.146.46.164"];//['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org'];
+//const proxyIPs = [''];  
   
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];  
   
-let sha224Password = 'd2afb0730a72148d4d467222c4d9394724b271e7eca55e949101faea';  
+let sha224Password = 'db2744091e077186e618ee50410d80e5e2c66585274e519db4a03e56';  
   
 const worker_default = {  
-   /** 
+   /** xxxx
     * @param {import("@cloudflare/workers-types").Request} request 
     * @param {{UUID: string, PROXYIP: string}} env 
     * @param {import("@cloudflare/workers-types").ExecutionContext} ctx 
